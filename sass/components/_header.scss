@@ -4,6 +4,12 @@
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+
+    @media screen and (max-width: 767px) {
+      max-width: 767px;
+    }
   }
 
   &__nav {
@@ -12,8 +18,8 @@
   }
 
   &__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &--black {
       color: $secondary-black-color;
@@ -21,10 +27,15 @@
   }
 }
 
+
 .nav {
   @extend %list;
   display: flex;
   margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__item--current {
     color: $accent-color;
@@ -72,6 +83,10 @@
   display: flex;
   margin-left: auto;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -108,4 +123,23 @@
   &__icon--right {
     margin-right: 10px;
   }
+}
+
+.menu-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: transparent;
+  color: #212121;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu-burger {
+  width: 24px;
+  height: 16px;
+  color: currentColor;
 }

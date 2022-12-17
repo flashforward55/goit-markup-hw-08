@@ -1,11 +1,24 @@
 /* общий класс .container для центрирования и ограничения контента по ширине */
 
 .container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width:480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+
+  }
 }
 
 /* скрываем заголовки h1 и h2 на странице*/
@@ -20,7 +33,9 @@
   @extend %link;
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   color: $accent-color;
+
+
 }
