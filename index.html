@@ -61,7 +61,7 @@
                 <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <!-- <section class="scills">
+        <section class="scills">
             <div class="container">
                 <h2 class="hidden">Наші переваги</h2>
                 <ul class="scills__items">
@@ -136,7 +136,15 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__items">
                     <li class="team__item">
-                        <img src="./images/prod_designer.jpg" alt="Фото Ігор Дем'яненко">
+                        <picture>
+                            <source srcset="./images/demyanenko-desktop.jpg 1x, ./images/demyanenko-desktop@2.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/demyanenko-tablet.jpg 1x, ./images/demyanenko-tablet@2x.jpg 2x"
+                                media="(min-width: 798px)">
+                            <img srcset="./images/demyanenko.jpg 1x, ./images/demyanenko@2x.jpg 2x"
+                                src="./images/demyanenko.jpg" alt="Фото Ігор Дем'яненко">
+                        </picture>
+                        <!-- <img src="./images/demyanenko.jpg" alt="Фото Ігор Дем'яненко"> -->
                         <div class="team__content">
                             <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                             <p class="team__text" lang="en">Product Designer</p>
@@ -177,7 +185,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/developer.jpg" alt="Фото Ольга Рєпіна">
+                        <picture>
+                            <source srcset="./images/repina-desktop.jpg 1x, ./images/repina-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/repina-tablet.jpg 1x, ./images/repina-tablet@2x.jpg 2x"
+                                media="(min-width: 798px)">
+                            <img srcset="./images/repina.jpg 1x, ./images/repina@2x.jpg 2x" src="./images/repina.jpg"
+                                alt="Фото Ольга Рєпіна">
+                        </picture>
+                        <!-- <img src="./images/developer.jpg" alt="Фото Ольга Рєпіна"> -->
                         <div class="team__content">
                             <h3 class="team__subtitle">Ольга Рєпіна</h3>
                             <p class="team__text" lang="en">Frontend Developer</p>
@@ -218,7 +234,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/marketing.jpg" alt=" Фото Микола Тарасов">
+                        <picture>
+                            <source srcset="./images/tarasov-desktop.jpg 1x, ./images/tarasov-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tarasov-tablet.jpg 1x, ./images/tarasov-tablet@2x.jpg 2x"
+                                media="(min-width: 798px)">
+                            <img srcset="./images/tarasov.jpg 1x, ./images/tarasov@2x.jpg 2x" src="./images/tarasov.jpg"
+                                alt="Фото Микола Тарасов">
+                        </picture>
+                        <!-- <img src="./images/marketing.jpg" alt=" Фото Микола Тарасов"> -->
                         <div class="team__content">
                             <h3 class="team__subtitle">Микола Тарасов</h3>
                             <p class="team__text" lang="en">Marketing</p>
@@ -259,50 +283,58 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/ui_designer.jpg" alt="Фото Михайло Єрмаков">
-                        <div class="team__content">
-                            <h3 class="team__subtitle">Михайло Єрмаков</h3>
-                            <p class="team__text" lang="en">UI Designer</p>
-                            <ul class="team__social-items">
-                                <li class="team__social-item">
-                                    <a class="team__social-link" href="#" target="_blank" aria-label="Профіль Instagram"
-                                        title="Профіль Instagram">
-                                        <svg class="team__social-svg">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social-item">
-                                    <a class="team__social-link" href="#" target="_blank" aria-label="Профіль Twitter"
-                                        title="Профіль Twitter">
-                                        <svg class="team__social-svg">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social-item">
-                                    <a class="team__social-link" href="#" target="_blank" aria-label="Профіль Facebook"
-                                        title="Профіль Facebook">
-                                        <svg class="team__social-svg">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social-item">
-                                    <a class="team__social-link" href="#" target="_blank" aria-label="Профіль Linkedin"
-                                        title="Профіль Linkedin">
-                                        <svg class="team__social-svg">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="./images/ermakov-desktop.jpg 1x, ./images/ermakov-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/ermakov-tablet.jpg 1x, ./images/ermakov-tablet@2x.jpg 2x"
+                                media="(min-width: 798px)">
+                            <img srcset="./images/ermakov.jpg 1x, ./images/ermakov@2x.jpg 2x" src="./images/ermakov.jpg"
+                                alt="Фото Михайло Єрмаков"">
+                        </picture>
+                        <!-- <img src=" ./images/ui_designer.jpg" alt="Фото Михайло Єрмаков"> -->
+                            <div class="team__content">
+                                <h3 class="team__subtitle">Михайло Єрмаков</h3>
+                                <p class="team__text" lang="en">UI Designer</p>
+                                <ul class="team__social-items">
+                                    <li class="team__social-item">
+                                        <a class="team__social-link" href="#" target="_blank"
+                                            aria-label="Профіль Instagram" title="Профіль Instagram">
+                                            <svg class="team__social-svg">
+                                                <use href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social-item">
+                                        <a class="team__social-link" href="#" target="_blank"
+                                            aria-label="Профіль Twitter" title="Профіль Twitter">
+                                            <svg class="team__social-svg">
+                                                <use href="./images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social-item">
+                                        <a class="team__social-link" href="#" target="_blank"
+                                            aria-label="Профіль Facebook" title="Профіль Facebook">
+                                            <svg class="team__social-svg">
+                                                <use href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social-item">
+                                        <a class="team__social-link" href="#" target="_blank"
+                                            aria-label="Профіль Linkedin" title="Профіль Linkedin">
+                                            <svg class="team__social-svg">
+                                                <use href="./images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="clients">
+        <!-- <section class="clients">
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__items">

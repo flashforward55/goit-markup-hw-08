@@ -15,18 +15,20 @@
 /* делаем одинаковое рассточние между секциями */
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* заголоки h2 на главной странице */
 
 %title-main {
   font-weight: 700;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* скрываем заголовки h1 и h2 на странице*/
