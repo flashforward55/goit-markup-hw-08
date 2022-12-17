@@ -1,0 +1,51 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+}
+
+/* глобальный сброс margin, padding */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a,
+img,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* убираем пподчеркивание у ссылок */
+
+a {
+  display: inline-block;
+  @extend %link;
+}
+
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+}
+

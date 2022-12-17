@@ -1,0 +1,72 @@
+.clients {
+  @extend %section;
+
+  &__title {
+    @extend %title-main;
+  }
+
+  &__items {
+    @extend %list;
+    display: flex;
+    gap: $card-set-gap;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 5 * $card-set-gap) / 6);
+  }
+
+  &__link {
+    display: flex;
+    height: 92px;
+
+    align-items: center;
+    justify-content: center;
+    color: $social-team-color;
+    border: 1px solid $social-team-color;
+    border-radius: 4px;
+    padding: 16px 32px;
+
+    transition: border-color $time $transition-cubic,
+      color $time $transition-cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+
+  &__svg {
+    fill: currentColor;
+  }
+}
+
+.company-1 {
+  width: 41px;
+  height: 46.7px;
+}
+
+.company-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.company-3 {
+  width: 43.46px;
+  height: 41.18px;
+}
+
+.company-4 {
+  width: 84.44px;
+  height: 40.62px;
+}
+
+.company-5 {
+  width: 62.54px;
+  height: 45.43px;
+}
+
+.company-6 {
+  width: 93.79px;
+  height: 43.49px;
+}

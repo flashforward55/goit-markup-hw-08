@@ -1,0 +1,26 @@
+/* общий класс .container для центрирования и ограничения контента по ширине */
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* скрываем заголовки h1 и h2 на странице*/
+
+.hidden {
+  @extend %visually-hidden;
+}
+
+/* логотип */
+
+.logo {
+  @extend %link;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $accent-color;
+}
