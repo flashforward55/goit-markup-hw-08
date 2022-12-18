@@ -10,6 +10,11 @@
     @media screen and (min-width: 768px) {
       max-width: 768px;
     }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+
+    }
   }
 
   &__nav {
@@ -20,6 +25,13 @@
   &__logo {
     padding-top: 16px;
     padding-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      font-size: 26px;
+
+    }
 
     &--black {
       color: $secondary-black-color;
@@ -91,10 +103,14 @@
     flex-direction: column;
   }
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   &__item:not(:last-child) {
     margin-right: 50px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 0;
       margin-bottom: 10px;
     }
@@ -109,7 +125,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-top: 0;
       padding-bottom: 0;
     }
