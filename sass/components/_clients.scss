@@ -9,10 +9,12 @@
     @extend %list;
     display: flex;
     gap: $card-set-gap;
+    flex-wrap: wrap;
   }
 
   &__item {
-    flex-basis: calc((100% - 5 * $card-set-gap) / 6);
+    // flex-basis: calc((100% - 5 * $card-set-gap) / 6);
+    flex-basis: calc((100% - $card-set-gap) / 2);
   }
 
   &__link {

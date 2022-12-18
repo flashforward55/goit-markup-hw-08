@@ -3,6 +3,7 @@
   padding-bottom: 60px;
   background-color: $footer-bg-color;
   color: $primary-white-color;
+  text-align: center;
 
   &__items {
     @extend %list;
@@ -38,28 +39,33 @@
   }
 
   &__flex {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    display: block;
   }
 
   &__social {
-    display: flex;
-    flex-direction: column;
+    //  display: flex;
+    //  flex-direction: column;
+    margin-bottom: 60px;
   }
 
   &__contacts {
-    margin-right: 70px;
+    //  margin-right: 70px;
+    margin-bottom: 60px;
   }
 
   &__social-items {
     @extend %list;
     display: flex;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
-  &__social-item {
-    flex-basis: calc((100% - 3 * $social-item-gap) / 4);
-  }
+  // &__social-item {
+  //   flex-basis: calc((100% - 3 * $social-item-gap) / 4);
+  // }
 
   &__social-link {
     width: 44px;
@@ -94,15 +100,17 @@
   }
 
   &__form {
-    display: flex;
-    margin-left: auto;
-    align-items: flex-end;
+    // display: flex;
+    // margin-left: auto;
+    // align-items: flex-end;
+    display: block;
+    align-items: center;
   }
 
   &__form-subscribe {
     display: flex;
     flex-direction: column;
-    margin-right: 12px;
+    // margin-right: 12px;
   }
 
   &__form-label {
@@ -114,10 +122,11 @@
 
   &__form-email {
     padding: 16px 16px;
-    width: 358px;
+    // width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    margin-bottom: 20px;
 
     color: $hero-overlay-color;
     background-color: $footer-bg-color;
