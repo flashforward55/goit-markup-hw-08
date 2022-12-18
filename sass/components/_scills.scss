@@ -1,7 +1,12 @@
 .scills {
-  // @extend %section;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @extend %section;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -32,6 +37,11 @@
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - $card-set-gap) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 3 * $card-set-gap) / 4);
+
     }
   }
 
