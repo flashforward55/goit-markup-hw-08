@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (min-width: 767px) {
-      max-width: 767px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
     }
   }
 
@@ -87,8 +87,17 @@
     display: none;
   }
 
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
   &__item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -99,6 +108,11 @@
     color: $secondary-text-color;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
     transition: color $time $transition-cubic;
 
@@ -136,6 +150,10 @@
   border: none;
   margin-left: auto;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-burger {

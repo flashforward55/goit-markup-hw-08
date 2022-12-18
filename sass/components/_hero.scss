@@ -8,7 +8,7 @@
   padding-bottom: 118px;
 
   // max-width: 1600px;
-  max-width: 480px;
+  // max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
@@ -94,6 +94,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border: transparent;
+
+    @media screen and (min-width: 768px) {
+      padding-right: 24px;
+    }
 
     font-weight: 700;
     font-size: 16px;

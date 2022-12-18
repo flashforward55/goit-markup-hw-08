@@ -10,9 +10,13 @@
 
   &__items {
     @extend %list;
-    // display: flex;
-    // gap: $card-set-gap;
-    // flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: $card-set-gap;
+      flex-wrap: wrap;
+    }
+
   }
 
   &__item {
@@ -20,6 +24,10 @@
     // flex-basis: calc((100% - 3 * $card-set-gap) / 4);
     &:not(:last-child) {
       margin-bottom: $card-set-gap;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - $card-set-gap) / 2);
     }
   }
 
@@ -29,6 +37,10 @@
     text-transform: uppercase;
     font-size: 14px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__text {
