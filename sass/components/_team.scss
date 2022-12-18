@@ -8,13 +8,26 @@
 
   &__items {
     @extend %list;
-    // display: flex;
-    // margin-left: calc(-1 * $card-set-gap);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $card-set-gap;
+    }
+
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: $card-set-gap;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - $card-set-gap) / 2);
     }
 
     // flex-basis: calc(100% / 4 - $card-set-gap);

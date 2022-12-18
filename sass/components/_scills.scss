@@ -24,6 +24,10 @@
     // flex-basis: calc((100% - 3 * $card-set-gap) / 4);
     &:not(:last-child) {
       margin-bottom: $card-set-gap;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
     }
 
     @media screen and (min-width: 768px) {
