@@ -26,12 +26,25 @@
 .modal {
   padding: 40px;
   position: relative;
-  width: 528px;
+
+  width: 320px;
   min-height: 581px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+
   background-color: $primary-white-color;
   transform: scale(1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $time $transition-cubic;
 
@@ -63,6 +76,7 @@
 }
 
 .form {
+
   &__input-container {
     margin-bottom: 20px;
   }
@@ -70,7 +84,7 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.50;
     text-align: center;
     margin-bottom: 12px;
   }
@@ -147,6 +161,7 @@
     @extend %centeredFlex;
     line-height: 1.71;
     color: $secondary-text-color;
+    font-size: 12px;
   }
 
   &__checkbox {
@@ -178,6 +193,10 @@
     text-decoration-skip-ink: none;
     text-decoration: underline;
   }
+
+  // &__checkbox-text {
+  //   font-size: 12px;
+  // }
 
   &__button {
     @extend %centeredFlex;
