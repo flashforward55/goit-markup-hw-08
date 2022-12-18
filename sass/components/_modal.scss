@@ -87,6 +87,11 @@
     line-height: 1.50;
     text-align: center;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.05;
+
+    }
   }
 
   &__field {
@@ -162,6 +167,12 @@
     line-height: 1.17;
     color: $secondary-text-color;
     font-size: 12px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.7;
+      font-size: 14px;
+
+    }
   }
 
   &__checkbox {
