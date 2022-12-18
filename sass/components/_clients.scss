@@ -8,6 +8,12 @@
 
   &__title {
     @extend %title-main;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+
+    }
   }
 
   &__items {
@@ -15,6 +21,11 @@
     display: flex;
     gap: $card-set-gap;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+
+    }
   }
 
   &__item {
@@ -23,6 +34,11 @@
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 2 * $card-set-gap) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 5 * $card-set-gap) / 6);
+
     }
   }
 
