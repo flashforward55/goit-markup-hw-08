@@ -16,7 +16,6 @@
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-
     grid-gap: 8px;
     grid-row-gap: 15px;
     margin-bottom: 40px;
@@ -28,12 +27,20 @@
       justify-content: center;
       grid-row-gap: 0;
     }
+
+    @media screen and (min-width: 1200px) {
+      grid-gap: 0;
+      margin-bottom: 50px;
+
+    }
   }
 
+  &__item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 8px;
 
-  // &__item:not(:last-child) {
-  //   margin-right: 8px;
-  // }
+    }
+  }
 
   &__button {
     display: inline-block;
@@ -81,6 +88,13 @@
     border-right: 1px solid $bottom-border-card;
     border-bottom: 1px solid $bottom-border-card;
     border-left: 1px solid $bottom-border-card;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &--padding {
+        padding-bottom: 56px;
+      }
+    }
+
   }
 
   &__items {
@@ -102,11 +116,19 @@
 
     // flex-basis: calc((100% - 2 * $card-set-gap) / 3);
     &:not(:last-child) {
-      margin-bottom: $card-set-gap;
+      @media screen and (max-width: 767px) {
+        margin-bottom: $card-set-gap;
+      }
+
     }
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - $card-set-gap) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 2 * $card-set-gap) / 3);
+
     }
   }
 
@@ -145,7 +167,19 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 63px 24px;
+    padding: 91px 24px;
+
+    // @media screen and (min-width:480px) and (max-width: 767px) {
+    //   padding: 77px 24px;
+    // }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
 
     font-size: 18px;
     line-height: 1.56;
