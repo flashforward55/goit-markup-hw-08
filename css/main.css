@@ -1370,13 +1370,18 @@ a, .logo {
   margin-bottom: 30px;
 }
 .form__checkbox-label {
-  line-height: 1.17;
+  line-height: 0.9;
   color: #757575;
-  font-size: 12px;
+  font-size: 7px;
+}
+@media screen and (min-width: 480px) {
+  .form__checkbox-label {
+    line-height: 1.7;
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__checkbox-label {
-    line-height: 1.7;
     font-size: 14px;
   }
 }

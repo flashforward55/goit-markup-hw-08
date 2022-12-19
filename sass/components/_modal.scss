@@ -164,12 +164,16 @@
 
   &__checkbox-label {
     @extend %centeredFlex;
-    line-height: 1.17;
+    line-height: 0.9;
     color: $secondary-text-color;
-    font-size: 12px;
+    font-size: 7px;
+
+    @media screen and (min-width: 480px) {
+      line-height: 1.7;
+      font-size: 12px;
+    }
 
     @media screen and (min-width: 1200px) {
-      line-height: 1.7;
       font-size: 14px;
 
     }
