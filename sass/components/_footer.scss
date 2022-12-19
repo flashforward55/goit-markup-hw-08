@@ -94,7 +94,7 @@
   }
 
   &__social-item {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 3 * $social-item-gap) / 4);
     }
   }
