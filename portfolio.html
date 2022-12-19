@@ -47,13 +47,18 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="menu-open" data-menu-open>
+                <svg class="menu-burger">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
         <section class="portfolio-filter portfolio-card">
             <div class="container">
                 <h1 class="hidden">Портфоліо</h1>
-                <!-- Фильтр на странице портфолио -->
+
                 <ul class="portfolio-filter__items">
                     <li class="portfolio-filter__item"><button class="portfolio-filter__button"
                             type="button">Усі</button></li>
@@ -68,12 +73,20 @@
                             type="button">Маркетинг</button>
                     </li>
                 </ul>
-                <!-- Готовые проекты -->
                 <ul class="portfolio-card__items">
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/techno_crack.jpg" alt="Ноутбук з картками">
+                                <picture>
+                                    <source
+                                        srcset="./images/techno_crack-desktop.jpg 1x, ./images/techno_crack-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/techno_crack-tablet.jpg 1x, ./images/techno_crack-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/techno_crack.jpg 1x, ./images/techno_crack@2x.jpg 2x"
+                                        src="./images/techno_crack.jpg" alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -87,7 +100,14 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/orlean_star.jpg" alt="Два баскетболісти у стрибку">
+                                <picture>
+                                    <source srcset="./images/orlean-desktop.jpg 1x, ./images/orlean-desktop.jpg@2x 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/orlean-tablet.jpg 1x, ./images/orlean-tablet.jpg@2x 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/orlean.jpg 1x, ./images/orlean@2x.jpg 2x"
+                                        src="./images/orlean.jpg" alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -101,7 +121,14 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/sea_food.jpg" alt="Логотип ресторану">
+                                <picture>
+                                    <source srcset="./images/sea-desktop.jpg 1x, ./images/sea-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/sea-tablet.jpg 1x, ./images/sea-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/sea.jpg 1x, ./images/sea@2x.jpg 2x" src="./images/sea.jpg"
+                                        alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -115,7 +142,14 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/prime.jpg" alt="Великі навушники">
+                                <picture>
+                                    <source srcset="./images/prime-desktop.jpg 1x, ./images/prime-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/prime-tablet.jpg 1x, ./images/prime-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
+                                        src="./images/prime.jpg" alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -129,7 +163,14 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/boxes.jpg" alt="Дві коробки">
+                                <picture>
+                                    <source srcset="./images/boxes-desktop.jpg 1x, ./images/boxes-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/boxes-tablet.jpg 1x, ./images/boxes-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                                        src="./images/boxes.jpg" alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -143,7 +184,17 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/inspiration.jpg" alt="Дизайн сайту на моніторі комп'ютера">
+                                <picture>
+                                    <source
+                                        srcset="./images/inspiration-desktop.jpg 1x, ./images/inspiration-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="./images/inspiration-tablet.jpg 1x, ./images/inspiration-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/inspiration.jpg 1x, ./images/inspiration@2x.jpg 2x"
+                                        src="./images/inspiration.jpg" alt="Ноутбук з картками">
+                                </picture>
+
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -157,7 +208,14 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/limit_edit.jpg" alt="Відкрита книга з ілюстраціями">
+                                <picture>
+                                    <source srcset="./images/limit-desktop.jpg 1x, ./images/limit-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/limit-tablet.jpg 1x, ./images/limit-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/limit.jpg 1x, ./images/limit@2x.jpg 2x"
+                                        src="./images/limit.jpg" alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -171,7 +229,14 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/lab.jpg" alt="Бірка з логотипом компанії">
+                                <picture>
+                                    <source srcset="./images/lab-desktop.jpg 1x, ./images/lab-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/lab-tablet.jpg 1x, ./images/lab-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x" src="./images/lab.jpg"
+                                        alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -185,7 +250,15 @@
                     <li class="portfolio-card__item">
                         <a class="portfolio-card__link" href="">
                             <div class="portfolio-card__overlay">
-                                <img src="images/bisiness.jpg" alt="Людина набирає текст на ноутбуці">
+                                <picture>
+                                    <source
+                                        srcset="./images/business-desktop.jpg 1x, ./images/business-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/business-tablet.jpg 1x, ./images/business-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <img srcset="./images/business.jpg 1x, ./images/business@2x.jpg 2x"
+                                        src="./images/business.jpg" alt="Ноутбук з картками">
+                                </picture>
                                 <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -206,7 +279,6 @@
                 <div class="footer__contacts">
                     <a class="footer__logo logo" lang="en" href="./index.html">Web<span
                             class="footer__logo--white">Studio</span></a>
-                    <!-- Адрес компании -->
                     <address>
                         <ul class="footer__items">
                             <li class="footer__item"><a class="footer__link footer__link--white" href="

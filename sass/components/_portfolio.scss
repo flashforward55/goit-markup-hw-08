@@ -10,14 +10,30 @@
 
   &__items {
     @extend %list;
+    // display: flex;
+    // margin-bottom: 50px;
+    // justify-content: center;
+    width: 95%;
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    grid-gap: 8px;
+    grid-row-gap: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      flex-wrap: nowrap;
+      margin-bottom: 30px;
+      justify-content: center;
+      grid-row-gap: 0;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
+
+  // &__item:not(:last-child) {
+  //   margin-right: 8px;
+  // }
 
   &__button {
     display: inline-block;
@@ -29,7 +45,7 @@
     padding-right: 22px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     border-radius: 4px;
@@ -69,13 +85,29 @@
 
   &__items {
     @extend %list;
-    display: flex;
-    flex-wrap: wrap;
-    gap: $card-set-gap;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $card-set-gap
+    }
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: $card-set-gap;
   }
 
   &__item {
-    flex-basis: calc((100% - 2 * $card-set-gap) / 3);
+
+
+    // flex-basis: calc((100% - 2 * $card-set-gap) / 3);
+    &:not(:last-child) {
+      margin-bottom: $card-set-gap;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - $card-set-gap) / 2);
+    }
   }
 
   &__subtitle {
