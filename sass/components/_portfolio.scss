@@ -1,5 +1,3 @@
-/* portfolio-filter */
-
 .portfolio-filter {
   @extend %section;
 
@@ -10,9 +8,7 @@
 
   &__items {
     @extend %list;
-    // display: flex;
-    // margin-bottom: 50px;
-    // justify-content: center;
+
     width: 95%;
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +34,6 @@
   &__item:not(:last-child) {
     @media screen and (min-width: 1200px) {
       margin-right: 8px;
-
     }
   }
 
@@ -80,8 +75,6 @@
   }
 }
 
-/* portfolio-card */
-
 .portfolio-card {
   &__content {
     padding: 20px 24px;
@@ -94,7 +87,6 @@
         padding-bottom: 56px;
       }
     }
-
   }
 
   &__items {
@@ -105,21 +97,13 @@
       flex-wrap: wrap;
       gap: $card-set-gap
     }
-
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: $card-set-gap;
   }
 
   &__item {
-
-
-    // flex-basis: calc((100% - 2 * $card-set-gap) / 3);
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
         margin-bottom: $card-set-gap;
       }
-
     }
 
     @media screen and (min-width: 768px) {
@@ -128,7 +112,6 @@
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 2 * $card-set-gap) / 3);
-
     }
   }
 
@@ -168,10 +151,6 @@
     top: 0;
     left: 0;
     padding: 91px 24px;
-
-    // @media screen and (min-width:480px) and (max-width: 767px) {
-    //   padding: 77px 24px;
-    // }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding: 49px 24px 77px 24px;

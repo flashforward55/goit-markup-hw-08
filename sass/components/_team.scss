@@ -14,7 +14,6 @@
     @media screen and (min-width: 1200px) {
       font-size: 36px;
       margin-bottom: 50px;
-
     }
   }
 
@@ -26,7 +25,6 @@
       flex-wrap: wrap;
       gap: $card-set-gap;
     }
-
   }
 
   &__item {
@@ -47,8 +45,6 @@
 
     }
 
-    // flex-basis: calc(100% / 4 - $card-set-gap);
-    // margin-left: $card-set-gap;
     background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -59,12 +55,24 @@
   &__content {
 
     padding-top: 24px;
-    padding-bottom: $card-set-gap;
+    padding-bottom: 30px;
     text-align: center;
     line-height: 1.19;
 
+    @media screen and (min-width: 480px) {
+      padding-top: 30px;
+      padding-right: 122px;
+      padding-bottom: 24px;
+      padding-left: 122px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-right: 74px;
+      padding-left: 74px;
+    }
+
     @media screen and (min-width: 1200px) {
-      padding-top: $card-set-gap;
+      padding: 30px 32px;
     }
   }
 
@@ -85,13 +93,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: $social-item-gap;
+
+    @media screen and (min-width: 480px) {
+      gap: $social-item-gap;
+    }
   }
 
-  // &__social-item {
-
-
-  // }
+  &__social-item {
+    @media screen and (min-width: 480px) {
+      flex-basis: calc((100% - 3 * $social-item-gap) / 4);
+    }
+  }
 
   &__social-link {
     width: 44px;

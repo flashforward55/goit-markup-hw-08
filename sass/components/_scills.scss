@@ -1,12 +1,5 @@
 .scills {
   @extend %section;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -21,12 +14,10 @@
       gap: $card-set-gap;
       flex-wrap: wrap;
     }
-
   }
 
   &__item {
 
-    // flex-basis: calc((100% - 3 * $card-set-gap) / 4);
     &:not(:last-child) {
       margin-bottom: $card-set-gap;
 

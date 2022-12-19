@@ -12,24 +12,24 @@
     @media screen and (min-width: 1200px) {
       font-size: 36px;
       margin-bottom: 50px;
-
     }
   }
 
   &__items {
     @extend %list;
-    display: flex;
-    gap: $card-set-gap;
-    flex-wrap: wrap;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      gap: $card-set-gap;
+      flex-wrap: wrap;
+    }
 
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
-
     }
   }
 
   &__item {
-    // flex-basis: calc((100% - 5 * $card-set-gap) / 6);
     flex-basis: calc((100% - $card-set-gap) / 2);
 
     @media screen and (min-width: 768px) {
@@ -38,7 +38,6 @@
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 5 * $card-set-gap) / 6);
-
     }
   }
 
