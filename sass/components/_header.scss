@@ -202,16 +202,16 @@
   color: #212121;
   border: none;
   margin-left: auto;
-  cursor: pointer;
+
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
+  // &:hover,
+  // &:focus {
+  //   color: $accent-color;
+  // }
 
   &__open {
     fill: currentColor;
@@ -232,6 +232,16 @@
     height: 40px;
     right: 15px;
     top: 10px;
+    cursor: pointer;
+
+    transform: rotate(0);
+    transition: color $time $transition-cubic, transform $time $transition-cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transform: rotate(180deg);
+    }
   }
 
   // .menu-container & {
@@ -272,26 +282,33 @@
 }
 
 .mobile-menu {
-  padding: 0;
-  margin-bottom: auto;
-  list-style: none;
 
-  &__item {
+  // padding: 0;
+  // margin-bottom: auto;
+  // list-style: none;
+  @extend %list;
+  margin-bottom: 302px;
+
+  &__item:nth-child(1) {
+    margin-bottom: 35.71px;
+
+    // @media screen and (max-width: 459px) {
+    //   margin-bottom: 16px;
+    // }
+  }
+
+  &__item:nth-child(2) {
     margin-bottom: 32px;
-
-    @media screen and (max-width: 459px) {
-      margin-bottom: 16px;
-    }
   }
 
   &__link {
-    display: block;
+    // display: block;
     // padding: 10px;
 
-    text-decoration: none;
+    // text-decoration: none;
     font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: $primary-text-color;
     transition: color 250ms $transition-cubic;
@@ -343,7 +360,6 @@
     line-height: 28px;
     letter-spacing: 0.02em;
     color: $secondary-text-color;
-    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -358,6 +374,10 @@
   flex-wrap: wrap;
   list-style: none;
   row-gap: 10px;
+
+  @media screen and (min-width:480px) {
+    flex-wrap: nowrap;
+  }
 
   &__item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
