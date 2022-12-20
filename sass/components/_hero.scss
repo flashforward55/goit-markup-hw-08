@@ -90,17 +90,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     min-width: 200px;
     padding-left: 24px;
-    padding-right: 32px;
+    padding-right: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
     border: transparent;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-right: 24px;
-    }
-
     @media screen and (min-width: 1200px) {
       min-width: 216px;
+      padding-left: 32px;
       padding-left: 32px;
     }
 
