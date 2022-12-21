@@ -95,7 +95,7 @@
     color: $primary-text-color;
     transition: color 250ms $transition-cubic;
 
-    @media screen and (max-width: 459px) {
+    @media screen and (max-width: 275px) {
       font-size: 32px;
     }
 
@@ -115,7 +115,7 @@
   }
 }
 
-.menu-block {
+.mobile-contacts {
   margin-top: auto;
 }
 
