@@ -287,7 +287,7 @@
   // margin-bottom: auto;
   // list-style: none;
   @extend %list;
-  margin-bottom: 302px;
+  // margin-bottom: auto;
 
   &__item:nth-child(1) {
     margin-bottom: 35.71px;
@@ -330,9 +330,9 @@
 
 .contacts-menu {
   @extend %list;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 32px;
   }
 
@@ -369,40 +369,34 @@
 }
 
 .social-menu {
+  @extend %list;
   display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  list-style: none;
-  row-gap: 10px;
 
-  @media screen and (min-width:480px) {
-    flex-wrap: nowrap;
+  @media screen and (max-width: 390px) {
+    flex-wrap: wrap;
   }
 
   &__item {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
-    margin-right: 10px;
 
-    &:last-child {
-      border: none;
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 10px;
     }
 
-    &:first-child {
-      padding-left: 0;
+    &:not(:first-child) {
+      padding-left: 10px;
     }
   }
 
   &__link {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color;
-    text-decoration: none;
-
-    @media screen and (min-width:460px) {
-      font-size: 18px;
-    }
   }
+}
+
+.menu-block {
+  margin-top: auto;
 }

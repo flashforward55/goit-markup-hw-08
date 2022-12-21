@@ -8,6 +8,9 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.14;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 /* глобальный сброс margin, padding */
 h1,
@@ -87,7 +90,7 @@ button {
 }
 
 /* убираем точки списков */
-.portfolio-card__items, .portfolio-filter__items, .footer__social-items, .footer__items, .clients__items, .team__social-items, .team__items, .work__items, .scills__items, .contacts-menu, .mobile-menu, .header-contact, .nav {
+.portfolio-card__items, .portfolio-filter__items, .footer__social-items, .footer__items, .clients__items, .team__social-items, .team__items, .work__items, .scills__items, .social-menu, .contacts-menu, .mobile-menu, .header-contact, .nav {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -399,9 +402,6 @@ a, .logo {
   }
 }
 
-.mobile-menu {
-  margin-bottom: 302px;
-}
 .mobile-menu__item:nth-child(1) {
   margin-bottom: 35.71px;
 }
@@ -430,9 +430,9 @@ a, .logo {
 }
 
 .contacts-menu {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
-.contacts-menu__item {
+.contacts-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .contacts-menu__tel {
@@ -466,43 +466,30 @@ a, .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  row-gap: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 390px) {
   .social-menu {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
-.social-menu__item {
+.social-menu__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
-  margin-right: 10px;
 }
-.social-menu__item:last-child {
-  border: none;
-}
-.social-menu__item:first-child {
-  padding-left: 0;
+.social-menu__item:not(:first-child) {
+  padding-left: 10px;
 }
 .social-menu__link {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-  text-decoration: none;
 }
-@media screen and (min-width: 460px) {
-  .social-menu__link {
-    font-size: 18px;
-  }
+
+.menu-block {
+  margin-top: auto;
 }
 
 .hero {

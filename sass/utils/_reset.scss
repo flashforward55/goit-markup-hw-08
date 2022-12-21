@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.14;
 
+  &.modal-open {
+    overflow: hidden;
+  }
+
 }
 
 /* глобальный сброс margin, padding */
