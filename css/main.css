@@ -428,6 +428,13 @@ a, .logo {
 .mobile-menu__link--current {
   color: #2196F3;
 }
+.menu-toggle__btn-close:hover + ul > li > .mobile-menu__link--current, .menu-toggle__btn-close:focus + ul > li > .mobile-menu__link--current {
+  color: inherit;
+}
+
+.menu-block {
+  margin-top: auto;
+}
 
 .contacts-menu {
   margin-bottom: 64px;
@@ -486,10 +493,6 @@ a, .logo {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-
-.menu-block {
-  margin-top: auto;
 }
 
 .hero {
@@ -1407,7 +1410,9 @@ a, .logo {
 .modal {
   padding: 25px;
   position: relative;
-  width: 250px;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 275px;
   min-height: 520px;
   background-color: #ffffff;
   -webkit-transform: scale(1);
@@ -1423,13 +1428,13 @@ a, .logo {
 @media screen and (min-width: 480px) {
   .modal {
     padding: 40px;
-    width: 450px;
+    max-width: 450px;
     min-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }

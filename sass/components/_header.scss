@@ -154,43 +154,7 @@
   }
 }
 
-// .menu-open {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding-top: 22px;
-//   padding-bottom: 22px;
-//   padding-right: 8px;
-//   background-color: transparent;
-//   color: #212121;
-//   border: none;
-//   margin-left: auto;
-//   cursor: pointer;
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
-// .menu-burger {
-//   width: 24px;
-//   height: 16px;
-//   color: currentColor;
-// }
-
 .menu-toggle {
-  // min-height: 40px;
-  // min-width: 40px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // margin-left: auto;
-  // padding: 0;
-  // background-color: transparent;
-  // cursor: pointer;
-  // border: none;
-  // border-radius: 50%;
-  // outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,11 +171,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-
-  // &:hover,
-  // &:focus {
-  //   color: $accent-color;
-  // }
 
   &__open {
     fill: currentColor;
@@ -243,13 +202,6 @@
       transform: rotate(180deg);
     }
   }
-
-  // .menu-container & {
-  //   position: absolute;
-  //   top: 16px;
-  //   right: 16px;
-  // }
-
 }
 
 .menu-container {
@@ -282,19 +234,10 @@
 }
 
 .mobile-menu {
-
-  // padding: 0;
-  // margin-bottom: auto;
-  // list-style: none;
   @extend %list;
-  // margin-bottom: auto;
 
   &__item:nth-child(1) {
     margin-bottom: 35.71px;
-
-    // @media screen and (max-width: 459px) {
-    //   margin-bottom: 16px;
-    // }
   }
 
   &__item:nth-child(2) {
@@ -302,10 +245,6 @@
   }
 
   &__link {
-    // display: block;
-    // padding: 10px;
-
-    // text-decoration: none;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
@@ -324,8 +263,18 @@
 
     &--current {
       color: $accent-color;
+
+      .menu-toggle__btn-close:hover+ul>li>&,
+      .menu-toggle__btn-close:focus+ul>li>& {
+        color: inherit;
+      }
+
     }
   }
+}
+
+.menu-block {
+  margin-top: auto;
 }
 
 .contacts-menu {
@@ -395,8 +344,4 @@
     letter-spacing: 0.02em;
     color: $accent-color;
   }
-}
-
-.menu-block {
-  margin-top: auto;
 }

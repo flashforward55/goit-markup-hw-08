@@ -26,18 +26,21 @@
 .modal {
   padding: 25px;
   position: relative;
+  overflow-y: auto;
 
-  width: 250px;
+
+  width: 100%;
+  max-width: 275px;
   min-height: 520px;
 
   @media screen and (min-width: 480px) {
     padding: 40px;
-    width: 450px;
+    max-width: 450px;
     min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 
