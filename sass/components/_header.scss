@@ -138,18 +138,32 @@
   }
 
   &__envelope {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
   }
 
   &__smartphone {
     width: 10px;
-    height: 16px;
+    height: 14px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
 
   &__icon--right {
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 }
