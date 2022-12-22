@@ -206,7 +206,15 @@ a, .logo {
 .nav__item--current {
   color: #2196F3;
 }
-.nav__item:not(:last-child) {
+.nav__item:nth-child(1) {
+  margin-right: 51px;
+}
+@media screen and (min-width: 1200px) {
+  .nav__item:nth-child(1) {
+    margin-right: 53px;
+  }
+}
+.nav__item:nth-child(2) {
   margin-right: 50px;
 }
 .nav__link {
@@ -263,7 +271,7 @@ a, .logo {
   }
 }
 .header-contact__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contact__item:not(:last-child) {

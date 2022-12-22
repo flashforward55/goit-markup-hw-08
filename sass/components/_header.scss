@@ -52,7 +52,15 @@
     color: $accent-color;
   }
 
-  &__item:not(:last-child) {
+  &__item:nth-child(1) {
+    margin-right: 51px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 53px;
+    }
+  }
+
+  &__item:nth-child(2) {
     margin-right: 50px;
   }
 
@@ -107,7 +115,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 0;
