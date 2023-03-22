@@ -7,9 +7,11 @@ buttons.forEach(button => {
     const filter = button.dataset.filter;
     items.forEach(item => {
       if (filter === 'all' || item.dataset.category === filter) {
-        item.style.display = 'block';
+        // item.style.display = 'block';
+        item.classList.remove('hidden');
       } else {
-        item.style.display = 'none';
+        // item.style.display = 'none';
+        item.classList.add('hidden');
       }
     });
   });
