@@ -10,12 +10,12 @@ buttons.forEach(button => {
         // item.style.display = 'block';
         item.classList.remove('hidden');
         item.style.opacity = 1;
-        item.style.transition = 'opacity 0.25s ease-in-out, height 0.25s ease-in-out';
+        //item.style.transition = 'opacity 0.25s ease-in-out, height 0.25s ease-in-out';
       } else {
         // item.style.display = 'none';
         item.classList.add('hidden');
         item.style.opacity = 0;
-        item.style.transition = 'opacity 0.25s ease-in-out, height 0.25s ease-in-out';
+        //item.style.transition = 'opacity 0.25s ease-in-out, height 0.25s ease-in-out';
       }
     });
   });
